@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Targeting span containing only 'yadav' */
+span {
+    color: rgb(157, 32, 189);
+    font-style: italic;
+}
+
+span:hover {
+    color: #882eae;
+    text-decoration: underline solid;
+}
+
+nav {
+    height: 50px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #008566;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #008566;
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    color: #882eae;
+    text-decoration: underline solid;
+}
+
+.hero {
+    background-color: #ffffff;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #008566;
+    padding: 0 2rem;
+}
+
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    background: #008566;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    border: solid #008566;
+    color: #008566;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+}
